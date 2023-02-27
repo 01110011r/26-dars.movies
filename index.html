@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container d-flex justify-content-around flex-lg-row flex-column">
+        <div class="left">
+            <form class="form d-flex flex-column pt-5 w-100 row-gap-3" action="https://echo.htmlacademy.ru" method="post"><input class="form__item ps-3" type="text" placeholder="ave"><input class="form__item ps-3" type="text" placeholder="5">
+                <div class="form__item dropdown ">
+                    <button class="w-100 text-bg-light btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      All
+    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="form__item dropdown">
+                    <button class="w-100 btn text-bg-light btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Rating (high to low)
+    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div><input class="btn btn-primary" type="submit" value="Submit">
+            </form>
+            <div class="marked mt-5">
+                <h2>Bookmarked movies</h2>
+                <div class="marked__item mt-3 p-3 bg-gradient d-flex flex-column row-gap-2 w-100"><a href="#">Avengers: Infinity War</a><button class="btn marked__item-btn text-bg-danger" type="reset">Remove</button></div>
+                <div class="marked__item p-3 bg-gradient d-flex flex-column row-gap-2 w-100"><a href="#">Avengers: Infinity War</a><button class="btn marked__item-btn text-bg-danger" type="reset">Remove</button></div>
+                <div class="marked__item p-3 bg-gradient d-flex flex-column row-gap-2 w-100"><a href="#">Avengers: Infinity War</a><button class="btn marked__item-btn text-bg-danger" type="reset">Remove</button></div>
+            </div>
+        </div>
+        <!-- left >>>  right -->
+        <div class="right align-items-center">
+            <h2 class="pt-2">Movies cotalog</h2>
+            <h4>Search result: 39</h4>
+            <div class="right__text p-2 mb-4"><span class="right__text-span ps-3 d-none d-lg-inline-block">Use the form on the left to search for a movie</span><span class="right__text-span ps-3 d-inline-block d-lg-none ">Use the form on the top to search for a movie</span></div>
+            <div class="right__cards d-flex flex-sm-row flex-column align-items-center gap-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/marvel.jpg" class="card-img-top" alt="avengers movie">
+                    <div class="card-body">
+                        <h5 class="card-title">Avengers: Infinity War</h5>
+                        <a href="#" class="d-block"><img src="./images/tablelist.svg" alt="date svg"> 2018</a>
+                        <a href="#" class="d-block mt-2 mb-3"><img src="./images/starsolid.svg" alt="star svg"> 8.7</a>
+                        <button type="button" class="btn btn-outline-primary me-2">Primary</button><button type="button" class="btn btn-outline-success me-2">Success</button><button type="button" class="btn btn-outline-info">Info</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/avengers.jpg" class="card-img-top" alt="avengers movie">
+                    <div class="card-body">
+                        <h5 class="card-title">The Avengers</h5>
+                        <a href="#" class="d-block"><img src="./images/tablelist.svg" alt="date svg"> 2012</a>
+                        <a href="#" class="d-block mt-2 mb-3"><img src="./images/starsolid.svg" alt="star svg"> 8.1</a>
+                        <button type="button" class="btn btn-outline-primary me-2">Primary</button><button type="button" class="btn btn-outline-success me-2">Success</button><button type="button" class="btn btn-outline-info">Info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="btns w-100 d-flex justify-content-center pt-5 pb-5 "><button class="btn btn-outline-primary active">1</button><button class="btn btn-outline-primary">2</button><button class="btn btn-outline-primary">3</button><button class="btn btn-outline-primary">4</button></div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
